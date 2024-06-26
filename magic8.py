@@ -4,7 +4,7 @@ name = "Camila"
 question = "What is the meaning of life?"
 answer = ""
 
-random_number = random.randit(1,9)
+random_number = random.randint(1,9)
 
 if random_number == 1:
   answer = "Yes - definitely"
@@ -23,3 +23,19 @@ elif random_number == 5:
 
 elif random_number == 6:
   answer = "Better not tell you now"
+
+elif random_number == 7:
+  answer = "My sources say no"
+
+elif random_number == 8:
+  answer = "Outlook not so good"
+
+elif random_number == 9:
+  answer = "Very doubtful"
+
+else:
+  answer = "Error"
+
+print(name + " asks: " + question)
+
+print("Magic 8 Ball's answer: " + answer)
