@@ -1,11 +1,13 @@
 import random
 
+#Setting up variables
 name = "Camila"
 question = "What is the meaning of life?"
 answer = ""
 
 random_number = random.randint(1,15)
 
+# 8 ball messages
 if random_number == 1:
   answer = "Yes - definitely"
 
@@ -52,12 +54,14 @@ elif random_number == 15:
   answer = "There is nothing to say about this."
 else:
   answer = "Error"
-
+  
+#if name is empty then print out "Question: ..." else name + " asks: "
 if name == "":
   print("Question: " + question)
 else:
   print(name + " asks: " + question)
 
+#if question is empty then print out statement else print out 8-balls answer
 if question == "":
   print("No fortune for you my friend!")
 else:
