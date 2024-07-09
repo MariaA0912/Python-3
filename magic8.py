@@ -4,7 +4,7 @@ name = "Camila"
 question = "What is the meaning of life?"
 answer = ""
 
-random_number = random.randint(1,9)
+random_number = random.randint(1,15)
 
 if random_number == 1:
   answer = "Yes - definitely"
@@ -33,9 +33,32 @@ elif random_number == 8:
 elif random_number == 9:
   answer = "Very doubtful"
 
+elif random_number == 10:
+  answer = "NO!"
+
+elif random_number == 11:
+  answer = "Maybe...."
+
+elif random_number == 12:
+  answer = "YES!"
+
+elif random_number == 13:
+  answer = "Emptiness..."
+
+elif random_number == 14:
+  answer = "I don't think so..."
+
+elif random_number == 15:
+  answer = "There is nothing to say about this."
 else:
   answer = "Error"
 
-print(name + " asks: " + question)
+if name == "":
+  print("Question: " + question)
+else:
+  print(name + " asks: " + question)
 
-print("Magic 8 Ball's answer: " + answer)
+if question == "":
+  print("No fortune for you my friend!")
+else:
+  print("Magic 8 Ball's answer: " + answer)
